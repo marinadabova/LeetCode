@@ -1,4 +1,5 @@
-class Solution {
+//two pointers -left for 0 and right for non-zero
+class Solution1 {
     public void moveZeroes(int[] nums) {
         int n = nums.length;
         int l = 0;
@@ -15,6 +16,22 @@ class Solution {
                 nums[r] = nums[l];
                 nums[l] = temp;
             }
+        }
+    }
+}
+//
+class Solution2 {
+    public void moveZeroes(int[] nums) {
+        int n=nums.length;
+        int index=0;
+
+        for(int i=0;i<n;i++){
+            if(nums[i]!=0){
+                nums[index++]=nums[i];
+            }
+        }
+        for(int i=index;i<n;i++){
+            nums[i]=0;
         }
     }
 }
