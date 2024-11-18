@@ -33,3 +33,16 @@ class Solution {
         return dummy.next;
     }
 }
+/*
+s         f
+0-1-2-3-4-5
+      |
+size-k% size =5- 2%5= 5-2=3 times
+
+      s   f        
+0-1-2-3-4-5
+
+5-1-2-3-4
+0-4-5-1-2-3-null
+
+*/
