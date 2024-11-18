@@ -23,6 +23,7 @@ class Solution {
             fast = fast.next;
         }
         int n = size - k % size; //how many times should we traverse to the new headNode
+        
         for (int i = n; i > 0; i--) {
             slow = slow.next;
         }
